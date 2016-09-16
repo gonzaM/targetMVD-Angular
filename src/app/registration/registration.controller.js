@@ -9,10 +9,8 @@ class RegistrationController {
   submit(){
     this.UsersService.create(this.user)
     .then(response => {
-      alert("Success!");
       this.AuthenticationService.setUserAuthToken(response.data.token);
     }, response => {
-      alert("Fail");
       this.errors = response.data.errors;
     });
   }
