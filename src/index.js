@@ -6,7 +6,7 @@ import { HomeController } from './app/home/home.controller';
 // Services
 import { Users } from './app/services/users.service';
 import { AuthenticationService } from './app/services/authentication.service';
-import { AuthInterceptor } from './app/components/auth.interceptor';
+import { AuthInterceptor } from './app/config/auth.interceptor';
 // Filters
 import { getErrorMessages } from './app/filters/getErrorsMessages.filter';
 

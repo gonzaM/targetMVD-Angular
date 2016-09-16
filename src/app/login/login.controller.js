@@ -9,11 +9,9 @@ class LoginController {
   login(){
     this.AuthenticationService.login(this.user)
     .then(response => {
-      alert("Success!");
       this.AuthenticationService.setUserAuthToken(response.data.token);
       this.$state.go('home');
     }, response => {
-      alert("Fail");
       this.errors = response.data.errors;
     });
   }
