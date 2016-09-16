@@ -1,0 +1,39 @@
+<div class="sign-up-container">
+  <div class="sign-up-title">
+    <h1>SIGN UP</h1>
+  </div>
+  <div class=".error-message" ng-repeat="(error, messages) in registrationCtrl.errors">
+    <span> {{error}} : {{messages[0]}}</span>
+   <!--  <div ng-repeat="message in messages">
+      <span> {{message}} </span>
+    </div> -->
+  </div>
+  <form name="form" ng-submit="form.$valid && registrationCtrl.submit()" novalidate>
+    <label class="form-label" for="name">NAME</label>
+    <input type="text" class="form-input" ng-class="{'input-error' : form.name.$invalid && form.name.$touched}" id="name" name="name" ng-model="registrationCtrl.user.name" required>
+
+    <label class="form-label" for="email">EMAIL</label>
+    <input type="email" class="form-input" ng-class="{'input-error' : form.email.$invalid && form.email.$touched}" id="email" name="email" ng-model="registrationCtrl.user.email" required>
+
+    <label class="form-label" for="password">PASSWORD</label>
+    <input type="password" class="form-input" ng-class="{'input-error' : form.password.$invalid && form.password.$touched}" id="password" name="password" placeholder="MIN. 8 CHARACTERS LONG"  ng-model="registrationCtrl.user.password" ng-minlength="6" required>
+
+    <label class="form-label" for="password_confirmation">CONFIRM PASSWORD</label>
+    <input type="password" class="form-input" ng-class="{'input-error' : form.password_confirmation.$invalid && form.password_confirmation.$touched}" id="password_confirmation" name="password_confirmation" ng-model="registrationCtrl.user.password_confirmation" required>
+
+    <label class="form-label" for="gender">GENDER</label>
+    <select class="form-input form-select" ng-class="{'input-error' : form.gender.$invalid && form.gender.$touched}" id="gender" name="gender" ng-model="registrationCtrl.user.gender" required>
+      <option value="">SELECT YOUR GENDER</option>
+      <option value="male">MALE</option>
+      <option value="female">FEMALE</option>
+      <option value="other">OTHER</option>
+    </select>
+
+    <button class="form-input form-button" >SIGN UP</button>
+  </form>
+
+  <hr class="separator-line">
+
+  <a class="form-label sign-in-link" href="/login"> SIGN IN</a>
+</div>
+

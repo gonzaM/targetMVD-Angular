@@ -1,0 +1,31 @@
+<div class="sign-in-container">
+  <div class="target-logo">
+    <img class= "landing-icon" src="/assets/images/smilies.png">
+  </div>
+  <div class="sign-in-title">
+    <h1>TARGET MVD</h1>
+  </div>
+  <div>
+    <h2>Find people near you & Connect</h2>
+  </div>
+  <div class="target-description">
+    <p class="normal-text description">
+      Create a  target  wherever on the map, specify your interest: Travel, Dating, Music, etc and start conecting with others who share your interest.
+    </p>
+  </div>
+  <div class="sign-in-form">
+    <form name="form" ng-submit="form.$valid && loginCtrl.login()" novalidate>
+      <label class="form-label" for="email">EMAIL</label>
+      <input type="email" class="form-input" id="email" name="email" ng-model="loginCtrl.user.email" ng-class="{'input-error' : form.email.$invalid && form.email.$touched}" required>
+
+      <label class="form-label" for="password">PASSWORD</label>
+      <input type="password" class="form-input" id="password" name="password" ng-model="loginCtrl.user.password" required>
+
+      <button class="form-input form-button" >SIGN IN</button>
+    </form>
+  </div>
+
+  <hr class="separator-line">
+
+  <a class="form-label sign-in-link" href="/register"> SIGN UP</a>
+</div>

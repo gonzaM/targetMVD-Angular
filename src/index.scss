@@ -1,0 +1,131 @@
+@import 'app/layout/reset';
+@import 'app/layout/common';
+@import 'app/registration/registration';
+@import 'app/login/login';
+
+html, body {
+  font-size: 10px;
+  height: 100%;
+  min-width: 320px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.normal-text {
+  font: normal 14px OpenSans;
+  line-height: 1.9;
+  color: #000000;
+}
+
+.target-landing {
+  order: 0;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+  overflow: overlay;
+}
+
+.target-app {
+  background-color: #2fbcf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.target-landing h1 {
+  text-align: center;
+  font: bold 20px OpenSans;
+  margin-bottom: 38px;
+}
+
+.target-landing h2 {
+  text-align: center;
+  font: bold 18px OpenSans;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #212121;
+}
+
+.demo-app, .icon-container {
+  text-align: center;
+}
+
+.demo-app {
+  background: url("/assets/images/i-6.png") center center no-repeat;
+  background-size: contain;
+  height: 70%;
+  min-height: 60rem;
+}
+
+.landing-icon {
+  margin: 10px;
+  text-align: center;
+}
+
+.form-input {
+  display: block;
+  margin: 3px auto 17px;
+  width: 100%;
+  max-width: 280px;
+  height: 37px;
+  border: solid 0.5px #060606;
+  text-align: center;
+  font: normal 10px OpenSans;
+  letter-spacing: 1.5px;
+  border-radius: 0px;
+}
+
+.input-error {
+  border-color: #FF0000;
+}
+
+.error-message {
+  color: #FF0000;
+}
+
+.form-label {
+  display: block;
+  text-align: center;
+  font: bold 11px OpenSans;
+  letter-spacing: 1.6px;
+  color: #000000;
+}
+
+.form-input.form-button {
+  margin-top: 34px;
+  background-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-select {
+  -webkit-appearance: none;
+  border-radius: 0px;
+  text-align-last: center;
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .target-landing,
+  .target-app {
+    width: 100%;
+  }
+
+  .target-landing {
+    height: auto;
+    overflow: inherit;
+    padding: 30px 15px;
+  }
+
+  .target-app {
+    display: block;
+  }
+}
