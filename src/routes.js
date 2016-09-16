@@ -6,12 +6,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    // .state('app', {
-    //   url: '/',
-    //   controller: 'hello',
-    //   templateUrl: 'app/hello.html',
-    //   controllerAs: 'helloCtrl'
-    // });
+    .state('home', {
+      url: '/home',
+      controller: 'home',
+      templateUrl: 'app/home/home.html',
+      controllerAs: 'homeCtrl'
+    })
     .state('login', {
       url: '/login',
       controller: 'login',

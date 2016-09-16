@@ -1,6 +1,7 @@
 class LoginController {
 
-  constructor(UsersService, AuthenticationService) {
+  constructor($state, UsersService, AuthenticationService) {
+    this.$state = $state;
     this.UsersService = UsersService;
     this.AuthenticationService = AuthenticationService;
   }
@@ -10,8 +11,10 @@ class LoginController {
     .then(response => {
       alert("Success!");
       this.AuthenticationService.setUserAuthToken(response.data.token);
+      this.$state.go('home');
     }, response => {
-      alert("Fail :(");
+      alert("Fail");
+      this.errors = response.data.errors;
     });
   }
 }

@@ -12,9 +12,8 @@ class RegistrationController {
       alert("Success!");
       this.AuthenticationService.setUserAuthToken(response.data.token);
     }, response => {
-      alert("Fail :(");
+      alert("Fail");
       this.errors = response.data.errors;
-      console.log(this.errors);
     });
   }
 }

@@ -7,14 +7,11 @@
   margin: auto;
 }
 
-.sign-up-title {
-  margin-bottom: 38px;
+.form-errors {
+  margin-bottom: 1.5rem;
 }
 
-.sign-in-link {
-  text-decoration: none;
-}
-
-.separator-line {
-  width: 12.1rem;
+.error-message {
+  color: #FF0000;
+  font: normal 1.1rem OpenSans;
 }

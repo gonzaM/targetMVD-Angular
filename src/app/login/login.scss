@@ -4,23 +4,39 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 50%;
   margin: auto;
 }
 
 .sign-in-form {
-  margin-top: 5rem;
-  width: 100%;
+  margin-top: 8%;
+  width: 50%;
+  padding-bottom: 10%;
 }
 
-.sign-in-title {
-  margin-bottom: 0.8rem;
+.sign-in-form .form-errors {
+  text-align: center;
 }
 
 .target-description {
-  max-width: 300px;
+  width: 60%;
+  max-width: 30rem;
 }
 
 .description {
   text-align: center;
 }
+
+.forgot-password {
+  font: normal normal 600 1.1rem OpenSans;
+  text-align: center;
+  color: #000000;
+}
+
+.connect-facebook {
+  font: bold 1.2rem OpenSans;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #000000;
+}
+
+

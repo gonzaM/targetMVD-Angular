@@ -14,12 +14,6 @@ html, body {
   height: 100%;
 }
 
-.normal-text {
-  font: normal 14px OpenSans;
-  line-height: 1.9;
-  color: #000000;
-}
-
 .target-landing {
   order: 0;
   width: 50%;
@@ -38,14 +32,13 @@ html, body {
 
 .target-landing h1 {
   text-align: center;
-  font: bold 20px OpenSans;
-  margin-bottom: 38px;
+  font: bold 2.0rem OpenSans;
+  margin-bottom: 3.8rem;
 }
 
 .target-landing h2 {
   text-align: center;
-  font: bold 18px OpenSans;
-  font-weight: 600;
+  font: normal normal 600 1.8rem OpenSans;
   line-height: 1.8;
   color: #212121;
 }
@@ -62,52 +55,61 @@ html, body {
 }
 
 .landing-icon {
-  margin: 10px;
+  margin: 1.0rem;
   text-align: center;
 }
 
 .form-input {
   display: block;
-  margin: 3px auto 17px;
+  margin: 0.3rem auto 1.7rem;
   width: 100%;
-  max-width: 280px;
-  height: 37px;
+  max-width: 28.0rem;
+  height: 3.7rem;
   border: solid 0.5px #060606;
   text-align: center;
-  font: normal 10px OpenSans;
-  letter-spacing: 1.5px;
-  border-radius: 0px;
+  font: normal 1.0rem OpenSans;
+  letter-spacing: 0.15rem;
+  border-radius: 0;
 }
 
 .input-error {
   border-color: #FF0000;
 }
 
-.error-message {
-  color: #FF0000;
-}
-
 .form-label {
   display: block;
   text-align: center;
-  font: bold 11px OpenSans;
-  letter-spacing: 1.6px;
+  font: bold 1.1rem OpenSans;
+  letter-spacing: 0.16rem;
   color: #000000;
 }
 
 .form-input.form-button {
-  margin-top: 34px;
+  margin-top: 3.4rem;
   background-color: #000000;
   color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .form-select {
   -webkit-appearance: none;
-  border-radius: 0px;
+  border-radius: 0;
   text-align-last: center;
 }
 
+.form-separator-line {
+  width: 12.1rem;
+}
+
+.normal-text {
+  font: normal 14px OpenSans;
+  line-height: 1.9;
+  color: #000000;
+}
+
+.sign-in-up-link {
+  text-decoration: none;
+}
 
 @media (max-width: 767px) {
   .container {
