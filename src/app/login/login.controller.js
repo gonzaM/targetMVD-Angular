@@ -10,7 +10,7 @@ class LoginController {
     this.AuthenticationService.login(this.user)
     .then(response => {
       this.AuthenticationService.setUserAuthToken(response.data.token);
-      this.$state.go('home');
+      this.$state.go('app.home');
     }, response => {
       this.errors = response.data.errors;
     });

@@ -34,13 +34,13 @@ angular
   .constant('ENV', {
     'API_ENDPOINT': 'http://localhost:3002/api/v1'
   })
-  .config(function (localStorageServiceProvider) {
+  .config(function(localStorageServiceProvider){
     localStorageServiceProvider
       .setPrefix('targetmvd')
-      .setStorageType('sessionStorage')
-  });
+      .setStorageType('sessionStorage');
+  })
   // .config(function($httpProvider){
   //   $httpProvider.interceptors.push('AuthInterceptor');
-  // });
+  // })
 
 
